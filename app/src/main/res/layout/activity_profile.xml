@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme"
+    tools:context=".Profile">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="60dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/userprofile" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/profileFullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="User Name"
+        android:layout_gravity="center" />
+
+<androidx.cardview.widget.CardView
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:elevation="30dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profileUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" User Name " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profileEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" User Mail " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profilePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" User Phone " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profileDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" User DOB " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nationality: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profileNationality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" User DOB " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profileGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" User DOB " />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/profileCreatedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created Date"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/profileLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Logout"
+        android:background="@drawable/buttonselector"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

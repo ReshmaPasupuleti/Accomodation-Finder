@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Accomodation Finder</string>
+
+    <string-array name="gender_preference">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Any</item>
+    </string-array>
+
+    <string-array name="stay_preference">
+        <item>Permanent</item>
+        <item>Temporary</item>
+    </string-array>
+
+    <string-array name="nationalities">
+        <item>Indian</item>
+        <item>Armenian</item>
+        <item>Australian</item>
+        <item>Austrian</item>
+        <item>British</item>
+        <item>Chinese</item>
+        <item>Czech</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Japanese</item>
+        <item>Russian</item>
+        <item>Vietnamese</item>
+    </string-array>
+
+    <string-array name="airports">
+        <item>San Francisco International Airport</item>
+        <item>Hartsfield–Jackson Atlanta International Airport</item>
+        <item>Dallas/Fort Worth International Airport</item>
+        <item>Indira Gandhi International Airport</item>
+        <item>Miami International Airport</item>
+        <item>Newark Liberty International Airport</item>
+        <item>Moscow Domodedovo Airport</item>
+        <item>Madrid Barajas Airport</item>
+        <item>Tokyo Haneda International Airport</item>
+        <item>Munich Airport</item>
+        <item>Hong Kong International Airport</item>
+        <item>Dubai International Airport</item>
+        <item>Narita International Airport, Japan </item>
+        <item>Osaka International Airport, Japan </item>
+        <item>Velana International Airport</item>
+
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+
+    </string-array>
+
+    <string-array name="bookingType">
+        <item>My Accommodation Bookings</item>
+        <item>My Pickup Bookings</item>
+
+
+    </string-array>
+
+</resources>

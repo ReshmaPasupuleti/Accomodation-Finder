@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".AccomodationSearchResults">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/postAccomodationCard"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/accSrno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:paddingStart="8dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="10dp"
+                    android:text="SRNOFIELD"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Available For: "
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/accNoPersons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="-- "
+                    android:textSize="16sp"
+                     />
+
+
+
+                <TextView
+                    android:id="@+id/accRent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+
+                    android:paddingStart="8dp"
+                    android:paddingEnd="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Rent 9000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/accTypeLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:text="Accomodation Type: "
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/accType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:text="2 Beds/ 1 Bath"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Available For Days: "
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/accNoDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="-- "
+                    android:textSize="16sp"
+                    />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+
+                android:text="Gender Preferences: "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/accGenderPref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:text="-- "
+                android:textSize="16sp"
+               />
+        </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:text="Facilities:"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/accFacilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:text=" Wifi, TV, Parking"
+
+                android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:text="City: "
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/accCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:text="---"
+
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:text="Nearby Places: "
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/accNearTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:text=" San Jose Avanue, San Jose City"
+                android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:text="Email: "
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/accEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:text="-"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:text="Posted Date: "
+
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/accPostDate"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginBottom="10dp"
+                android:text="-"
+                android:textSize="15sp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/mapButton"
+                    android:layout_width="wrap_content"
+                    android:maxHeight="20dp"
+                    android:minHeight="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/maps_icon"
+                    />
+
+                <ImageButton
+                    android:id="@+id/whatsAppButton"
+                    android:layout_width="wrap_content"
+                    android:maxHeight="20dp"
+                    android:minHeight="20dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/whatsapp_icon"
+                    />
+
+                <ImageButton
+                    android:id="@+id/mailButton"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:maxHeight="20dp"
+                    android:maxWidth="20dp"
+                    android:minWidth="20dp"
+                    android:minHeight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/email_icon"
+                    />
+
+
+                <TextView
+                    android:id="@+id/accWhatsapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/accCountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/accState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/accPincode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/accNearByPlaces"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/accLocationURL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/accOccupied"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/accMovinDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/accPostedBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/accOccupiedBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bookButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:background="@drawable/buttonselector"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"
+            android:text="Available"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

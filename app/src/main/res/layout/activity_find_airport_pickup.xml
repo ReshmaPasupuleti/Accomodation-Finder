@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/searchbg"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+
+
+    <Spinner
+        android:id="@+id/find_airport_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:entries="@array/airports"
+        android:layout_margin="10dp"
+        android:spinnerMode="dropdown"
+        android:drawableEnd="@drawable/down_arrow_icon"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittextstyle_forms"
+        />
+
+    <EditText
+        android:id="@+id/find_dropLocation"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextstyle_forms"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:maxLength="30"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="Drop Location" />
+
+    <EditText
+        android:id="@+id/find_dropDate"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextstyle_forms"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginTop="50dp"
+        android:inputType="date"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:maxLength="10"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="Arrival Date" />
+
+    <EditText
+        android:id="@+id/find_dropTime"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextstyle_forms"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        android:inputType="time"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:maxLength="8"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="Arrival Time" />
+
+
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/find_btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="SEARCH"
+        android:background="@drawable/buttonselector"
+        android:textSize="20sp"
+        android:textColor="#fff" />
+
+
+
+</LinearLayout>

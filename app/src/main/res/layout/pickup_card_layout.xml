@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".AccomodationSearchResults">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/postAccomodationCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/rcSrno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:paddingStart="8dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="10dp"
+                    android:text="SRNOFIELD"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Available From Airport :  "
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/rcAirport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="AirportName"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/accTypeLable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Drop Location: "
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/rcDropLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="XYZ Appartment"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Pickup Date"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/rcDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingStart="8dp"
+
+                    android:text="26-06-2022"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:text="Pickup Time"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/rcTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="10:00 AM"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+
+                android:text="Posted By:"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/rcPostedBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:text=""
+                android:textSize="15sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="260dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:maxHeight="20dp"
+                    android:minHeight="20dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/whatsappicon"
+                    />
+                <ImageButton
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:maxHeight="20dp"
+                    android:maxWidth="20dp"
+                    android:minWidth="20dp"
+                    android:minHeight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mailicon"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

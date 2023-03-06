@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/searchbg"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+    <EditText
+        android:id="@+id/sbu_etUniversity"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextstyle_forms"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:maxLength="30"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="Enter University" />
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sbu_btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="SEARCH"
+        android:background="@drawable/buttonselector"
+        android:textSize="20sp"
+        android:textColor="#fff" />
+
+
+
+</LinearLayout>

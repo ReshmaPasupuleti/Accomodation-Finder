@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/searchbg" />
+
+    <EditText
+        android:id="@+id/sba_etCountry"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextstyle_forms"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:maxLength="30"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="Country" />
+
+    <EditText
+        android:id="@+id/sba_etState"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextstyle_forms"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:maxLength="30"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="State/Province" />
+
+    <EditText
+        android:id="@+id/sba_etZip"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextstyle_forms"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:maxLength="30"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="Zipcode" />
+
+    <EditText
+        android:id="@+id/sba_etCity"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextstyle_forms"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:maxLength="30"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="City" />
+
+    <EditText
+        android:id="@+id/sba_etNearBy"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextstyle_forms"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:maxLength="30"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="Nearby Places" />
+
+    <EditText
+        android:id="@+id/sba_etBudget"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextstyle_forms"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:maxLength="30"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="Budget" />
+
+    <EditText
+        android:id="@+id/sba_etDate"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextstyle_forms"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:inputType="date"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:maxLength="30"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="Move-in Date" />
+
+    <EditText
+        android:id="@+id/sba_etSharing"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextstyle_forms"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:maxLength="30"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="No of Persons Sharing" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stay Preference: "
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <Spinner
+            android:id="@+id/sba_spStayPreference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:entries="@array/stay_preference"
+
+            />
+    </LinearLayout>
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sba_btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="SEARCH"
+        android:background="@drawable/buttonselector"
+        android:textSize="20sp"
+        android:textColor="#fff" />
+    <TextView
+        android:id="@+id/lgn_tvGotoRegister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="New to the app? Register"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#fff" />
+
+
+</LinearLayout>
+</ScrollView>

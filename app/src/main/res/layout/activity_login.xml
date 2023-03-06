@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#1B7CED"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/loginbg"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="LOGIN TO CONTINUE"
+        android:layout_marginTop="150dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/lgn_etUsername"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextstyle"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:maxLength="30"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/lgn_etPassword"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextstyle"
+        android:layout_height="50dp"
+        android:maxLength="20"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="Password" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lgn_btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Login"
+        android:background="@drawable/buttonselector"
+        android:textSize="20sp"
+        android:textColor="#fff" />
+    <TextView
+        android:id="@+id/lgn_tvGotoRegister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="New to the app? Register"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#fff" />
+
+
+</LinearLayout>
